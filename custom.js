@@ -5,14 +5,17 @@ var divRodape = ' <div class="custom_rodape"> <div class="logo_imagem">   <img s
 
 //Script de inicialização  do site
 $(document).ready(function () {
-
+    console.log(" --- Executei Script de Inicialização -- ");
+  
     $("head link[rel='stylesheet']").last().after(`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`);
-
+    
     $(".aba-redes-sociais").remove();
-
+    
     setTimeout(function(){
+        console.log(" --- Reestruturando Rodapé --- "); 
         $(".rodape-wrapper .selos-rodape .dir").remove();
         $("body").append(divRodape);
+        console.log(" --- FINALIZADO SCRIPT --- "); 
     }, 1000)
 })
 
