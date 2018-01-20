@@ -9,7 +9,7 @@ $(document).ready(function () {
   
     $("head link[rel='stylesheet']").last().after(`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`);
     
-    $(".aba-redes-sociais").remove();
+    $(".aba-redes-sociais").hide();
     
     setTimeout(function(){
         console.log(" --- Reestruturando Rodapé --- "); 
